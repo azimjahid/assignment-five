@@ -72,32 +72,6 @@ const callItemById = (id) => {
     })
 }
 
-const foodDetailShower = document.getElementById("food-datails-show")
 
-const closeWindow = () => {
-  foodDetailShower.classList.remove("food-datails-move");
-};
-
-const getSelectCard = (id) => {
-  console.log(id);
-  foodDetailShower.classList.add("food-datails-move");
-  callItemById(id)
-}
-
-const itemDetailWindow = (item) => {
-  console.log(item);
-  const meal = item.meals[0]
-  foodDetailShower.innerHTML = `
-    <div class="card item" >
-      <img src="${meal.strMealThumb}" class="card-img-top item" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">${meal.strMeal}</h5>
-        <p class="card-text">${meal.strInstructions}</p>
-      </div>
-        <button onclick="closeWindow()" class="close-icon "> &times; </button>
-    </div>
-   `;
-
-}
 
 // Thank You
