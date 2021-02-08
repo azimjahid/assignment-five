@@ -31,7 +31,7 @@ nav img {
     text-align: center;
 }
 
-.item-thum {
+.item-thumb {
     height: 200px;
     object-fit: cover;
 }
@@ -56,7 +56,7 @@ nav img {
     transition: 0.3s all ease;
 }
 
-#food-datails-show {
+#food-details-show {
     background: grey;
     position: fixed;
     width: 50%;
@@ -67,7 +67,7 @@ nav img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.food-datails-move {
+.food-details-move {
     transform: translateX(-50%) !important;
 }
 
@@ -109,3 +109,5 @@ nav img {
     background: yellow;
     color: red;
 }
+
+/* Thank You */

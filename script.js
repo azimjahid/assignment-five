@@ -48,7 +48,7 @@ const allItemShow = (data) => {
 
     foodCard.innerHTML = `
         <div class="card" >
-            <img src="${food.strMealThumb}" class="card-img-top item-thum" alt="...">
+            <img src="${food.strMealThumb}" class="card-img-top item-thumb" alt="...">
             <div class="card-body">
                 <h5 class="text-center"> ${food.strMeal}</h5>
             </div>
@@ -72,22 +72,22 @@ const callItemById = (id) => {
     })
 }
 
-const foodDetailShower = document.getElementById("food-datails-show")
+const foodDetailShow = document.getElementById("food-details-show")
 
 const closeWindow = () => {
-  foodDetailShower.classList.remove("food-datails-move");
+  foodDetailShow.classList.remove("food-details-move");
 };
 
 const getSelectCard = (id) => {
   console.log(id);
-  foodDetailShower.classList.add("food-datails-move");
+  foodDetailShow.classList.add("food-details-move");
   callItemById(id)
 }
 
 const itemDetailWindow = (item) => {
   console.log(item);
   const meal = item.meals[0]
-  foodDetailShower.innerHTML = `
+  foodDetailShow.innerHTML = `
     <div class="card item" >
       <img src="${meal.strMealThumb}" class="card-img-top item" alt="...">
       <div class="card-body">
